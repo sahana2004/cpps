@@ -1,0 +1,56 @@
+ #include <stdio.h>
+
+void input(int *a,int *b)
+{
+   printf("Enter a");
+   scanf("%d",a);
+   printf("Enter b");
+   scanf("%d",b);
+}
+int add(int a,int b)
+{
+   int c;
+   c=a+b;
+   return c;
+} 
+void output(int a, int b, int c)
+{
+   printf("%d , %d is %d\n",a,b,c);
+}
+   int main()
+{ 
+   int x,y,z;
+   input(&x,&y);
+   z=add(x,y);
+   output(x,y,z);
+}
+error: expected declaration specifiers before ‘}’ token
+ }
+ ^
+add.c:5:4: error: expected declaration specifiers before ‘printf’
+    printf("enter a");
+    ^~~~~~
+add.c:6:4: error: expected declaration specifiers before ‘scanf’
+    scanf("%d",a);
+    ^~~~~
+add.c:7:4: error: expected declaration specifiers before ‘printf’
+    printf("enter b");
+    ^~~~~~
+add.c:8:4: error: expected declaration specifiers before ‘scanf’
+    scanf("%d",b);
+    ^~~~~
+add.c:9:1: error: expected declaration specifiers before ‘}’ token
+ }
+ ^
+add.c:11:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+add.c:17:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+add.c:21:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+add.c:26:1: error: expected ‘{’ at end of input
+ }
+ ^
